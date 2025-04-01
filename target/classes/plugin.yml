@@ -1,0 +1,20 @@
+name: PetFollowPlugin
+version: '1.0'
+main: org.moostdev.petFollowPlugin.PetFollowPlugin
+api-version: '1.21'
+commands:
+  pet:
+    description: Spawne um mob de pet que te seguira pela sua jornada
+    usage: /pet <type> <color>
+    permission: petfollow.use
+  removepet:
+    description: Retire o pet.
+    usage: /remove pet
+    permission: petfollow.remove
+permissions:
+  petfollow.use:
+    description:  Permite o usuario spawnar um pet.
+    default: true
+  petfollow.remove:
+    description: permite o user retirar o pet.
+    default: true
